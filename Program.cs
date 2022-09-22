@@ -31,23 +31,23 @@
 // for (int index = 1; index <= number; index ++)
 // {
 //     double result = Math.Pow(index,3);
-//     //int result = Convert.ToInt32(Math.Pow(index,2));
-//     //int result = index * index;
 //     Console.Write($"{result} ");
 // }
 
-Console.Write("Введите пятизначное число: ");
-int number = int.Parse(Console.ReadLine());
-string numbertext = Convert.ToString(number);
-if (numbertext[0] == numbertext[4] && numbertext[1] == numbertext[3])
-{
-    Console.WriteLine($"Число {number} является палиндромом.");
-}
-else if (number > 99999)
-{
-    Console.WriteLine("Введите пятизначное число");
-}
-else
-{
-    Console.WriteLine($"Число {number} не является палиндромом.");
-}
+// Console.Write("Введите пятизначное число: ");
+// int number = int.Parse(Console.ReadLine());
+// string numbertext = Convert.ToString(number);
+// if (numbertext[0] == numbertext[4] && numbertext[1] == numbertext[3])
+// {
+//     Console.WriteLine($"Число {number} является палиндромом.");
+// }
+// else if (number > 99999)
+// {
+//     Console.WriteLine("Введите пятизначное число");
+// }
+// else
+// {
+//     Console.WriteLine($"Число {number} не является палиндромом.");
+// }
+
+Спасибо за проверку!!!
