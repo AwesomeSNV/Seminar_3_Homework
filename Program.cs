@@ -25,13 +25,29 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+// Console.Write("Введите число: ");
+// int number = int.Parse(Console.ReadLine());
 
-for (int index = 1; index <= number; index ++)
+// for (int index = 1; index <= number; index ++)
+// {
+//     double result = Math.Pow(index,3);
+//     //int result = Convert.ToInt32(Math.Pow(index,2));
+//     //int result = index * index;
+//     Console.Write($"{result} ");
+// }
+
+Console.Write("Введите пятизначное число: ");
+int number = int.Parse(Console.ReadLine());
+string numbertext = Convert.ToString(number);
+if (numbertext[0] == numbertext[4] && numbertext[1] == numbertext[3])
 {
-    double result = Math.Pow(index,3);
-    //int result = Convert.ToInt32(Math.Pow(index,2));
-    //int result = index * index;
-    Console.Write($"{result} ");
+    Console.WriteLine($"Число {number} является палиндромом.");
+}
+else if (number > 99999)
+{
+    Console.WriteLine("Введите пятизначное число");
+}
+else
+{
+    Console.WriteLine($"Число {number} не является палиндромом.");
 }
